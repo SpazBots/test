@@ -1,15 +1,6 @@
 jobs:
   auto-update:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/cache@v1
-        with:
-          key: v0-${{ runner.os }}-pip-lint-${{ hashFiles('setup.py') }}
-          path: ~/.cache/pip
-          restore-keys: |
-            v0-${{ runner.os }}-pip-lint-
-            v0-${{ runner.os }}-pip-
-      - uses: SpazBots/glowing-octo-broccoli/.github/workflows/pre-commit_autoupdate.yml@main
+    uses: SpazBots/glowing-octo-broccoli/.github/workflows/pre-commit_autoupdate.yml@main
 name: 'Update pre-commit hooks'
 on:
   schedule:
