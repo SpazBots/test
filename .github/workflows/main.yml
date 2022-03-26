@@ -1,5 +1,7 @@
 jobs:
   ci:
     uses: SpazBots/glowing-octo-broccoli/.github/workflows/main-ci.yml@main
+    with:
+      repo: praw
 name: CI
 on: [pull_request, push]
