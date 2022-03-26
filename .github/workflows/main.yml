@@ -1,0 +1,5 @@
+jobs:
+  ci:
+    - uses: SpazBots/.github/workflows/main-ci@main
+name: CI
+on: [pull_request, push]
