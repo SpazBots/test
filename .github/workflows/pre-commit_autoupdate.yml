@@ -1,8 +1,0 @@
-jobs:
-  auto-update:
-    uses: SpazBots/glowing-octo-broccoli/.github/workflows/pre-commit_autoupdate.yml@main
-name: 'Update pre-commit hooks'
-on:
-  schedule:
-    - cron: '0 15 * * 1'
-  workflow_dispatch:
