@@ -68,21 +68,25 @@ body:
         What implementation and version of Python are you working with. CPython is
         assumed unless indicated otherwise.
       label: Python Version
-      placeholder: 3.11.1
+      placeholder: "Example: 3.11.1"
     type: input
     validations:
       required: true
   - id: praw-version
     attributes:
+      description: |
+        What version of PRAW. You can obtain this by running `pip show praw`.
       label: PRAW Version
-      placeholder: 'Example: 7.6.1'
+      placeholder: "Example: 7.6.1"
     type: input
     validations:
       required: true
   - id: prawcore-version
     attributes:
+      description: |
+        What version of Prawcore. You can obtain this by running `pip show prawcore`.
       label: Prawcore Version
-      placeholder: 2.3.0
+      placeholder: "Example: 2.3.0"
     type: input
     validations:
       required: true
