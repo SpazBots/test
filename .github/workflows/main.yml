@@ -1,6 +1,8 @@
+run-name: run_name
 jobs:
   _:
     uses: SpazBots/.github/.github/workflows/main-ci.yml@main
     with:
       package: praw
 on: [pull_request, push]
+name: CI
