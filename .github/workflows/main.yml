@@ -3,6 +3,6 @@ jobs:
     name: CI
     uses: SpazBots/.github/.github/workflows/main-ci.yml@main
     with:
-      project: praw
+      package: praw
 name: CI
 on: [pull_request, push]
