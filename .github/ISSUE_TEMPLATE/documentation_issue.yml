@@ -1,0 +1,61 @@
+body:
+  - id: documentation-error
+    attributes:
+      label: Describe the Documentation Issue
+      placeholder: A description of the documentation issue you have found.
+    type: textarea
+    validations:
+      required: true
+  - id: attribute-check
+    attributes:
+      label: |
+        This issue is **NOT** related to an attribute that is missing or extraneous in the class's 'Typical Attributes' section.
+        See [Determine Available Attributes of an Object](https://praw.readthedocs.io/en/stable/getting_started/quick_start.html#determine-available-attributes-of-an-object) for more information.
+        Otherwise, you are more than welcome to open a pull request to address the attribute in question.
+      options:
+        - label: "Yes"
+          required: true
+    type: checkboxes
+  - id: location
+    attributes:
+      label: Location of the issue
+      placeholder: Provide the documentation URL or file path of the documentation where the issue can be found.
+    type: input
+    validations:
+      required: true
+  - id: expected-result
+    attributes:
+      label: What did you expect to see?
+      placeholder: Describe what you expected to see in the documentation.
+    type: textarea
+    validations:
+      required: true
+  - id: actual-result
+    attributes:
+      label: What did you actually see?
+      placeholder: Describe what you actually saw in the documentation.
+    type: textarea
+    validations:
+      required: true
+  - id: proposed-fix
+    attributes:
+      label: Proposed Fix
+      placeholder: If you have a suggestion for how to fix the documentation error, please describe it here.
+    type: textarea
+  - id: environment
+    attributes:
+      description: If this issue is a rendering error, what operating system and web browser are you using when viewing the documentation?
+      label: Operating System/Web Browser
+      placeholder: "Example: macOS Monterey, Google Chrome 89.0.4389.82"
+    type: input
+  - id: anything-else
+    attributes:
+      description: Links or references? Anything that will give us more context about the documentation error you are encountering!
+      label: Anything else?
+    type: textarea
+  - type: markdown
+    attributes:
+      value: Please attach a screenshot of the documentation error if possible after submitting the issue.
+description: Report a documentation error
+labels: [ "documentation", "unverified" ]
+name: Documentation Error Report
