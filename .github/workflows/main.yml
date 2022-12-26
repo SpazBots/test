@@ -1,6 +1,5 @@
 jobs:
-  ci:
-    name: CI
+  job:
     uses: SpazBots/.github/.github/workflows/main-ci.yml@main
     with:
       package: praw
