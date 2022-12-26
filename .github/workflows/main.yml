@@ -1,6 +1,6 @@
-run-name: run_name
 jobs:
-  _:
+  inherited:
+    name: " "
     uses: SpazBots/.github/.github/workflows/main-ci.yml@main
     with:
       package: praw
