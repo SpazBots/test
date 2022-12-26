@@ -8,10 +8,11 @@ body:
       required: true
   - id: attribute-check
     attributes:
-      label: |
+      description: |
         This issue is **NOT** related to an attribute that is missing or extraneous in the class's 'Typical Attributes' section.
         See [Determine Available Attributes of an Object](https://praw.readthedocs.io/en/stable/getting_started/quick_start.html#determine-available-attributes-of-an-object) for more information.
         Otherwise, you are more than welcome to open a pull request to address the attribute in question.
+      label: Attributes
       options:
         - label: "Yes"
           required: true
