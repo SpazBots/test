@@ -15,7 +15,7 @@ body:
       required: true
   - id: logs
     attributes:
-      description: Copy and paste any relevant log/stacktrace output.
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       label: Relevant Logs
       render: Shell
     type: textarea
@@ -24,9 +24,9 @@ body:
   - id: code
     attributes:
       description: |
-        Provide your [Minimal, Complete, and
-        Verifiable](https://stackoverflow.com/help/mcve) code example here, without the
-        Reddit() initialization, so as to not leak private credentials.
+        Provide your [Minimal, Complete, and Verifiable](https://stackoverflow.com/help/mcve)
+        code example here, without the Reddit() initialization, to not leak private credentials.
+        This will be automatically formatted into code, so no need for backticks.
       label: Code to reproduce the bug
       placeholder: "# Insert code here"
       render: Python
@@ -35,14 +35,11 @@ body:
       required: true
   - id: credential-check
     attributes:
-      label: |
-        My code example does not include the `Reddit()` initialization to prevent
-        credential leakage.
+      label: My code example does not include the `Reddit()` initialization to prevent credential leakage.
       options:
         - label: "Yes"
+          required: true
     type: checkboxes
-    validations:
-      required: true
   - id: previously-worked
     attributes:
       label: This code has previously worked as intended.
@@ -65,8 +62,8 @@ body:
   - id: python-version
     attributes:
       description: |
-        What implementation and version of Python are you working with. CPython is
-        assumed unless indicated otherwise.
+        What implementation and version of Python are you working with.
+        CPython is assumed unless indicated otherwise.
       label: Python Version
       placeholder: "Example: 3.11.1"
     type: input
@@ -74,27 +71,21 @@ body:
       required: true
   - id: praw-version
     attributes:
-      description: |
-        What version of PRAW. You can obtain this by running `pip show praw`.
+      description: What version of PRAW. Obtain this by running `pip show praw`.
       label: PRAW Version
-      placeholder: "Example: 7.6.1"
     type: input
     validations:
       required: true
   - id: prawcore-version
     attributes:
-      description: |
-        What version of Prawcore. You can obtain this by running `pip show prawcore`.
+      description: What version of Prawcore. Obtain this by running `pip show prawcore`.
       label: Prawcore Version
-      placeholder: "Example: 2.3.0"
     type: input
     validations:
       required: true
   - id: anything-else
     attributes:
-      description: |
-        Links or references? Anything that will give us more context about the issue
-        you are encountering!
+      description: Links or references? Anything that will give us more context about the issue you are encountering!
       label: Anything else?
     type: textarea
 description: File a bug report
