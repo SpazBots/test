@@ -1,7 +1,7 @@
 jobs:
   ci:
     name: CI
-    uses: SpazBots/.github/.github/workflows/main-ci.yml@main
+    uses: SpazBots/.github/workflows/main-ci.yml@main
     with:
       repo: praw
 name: CI
